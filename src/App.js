@@ -1,5 +1,5 @@
-importReact, { Component } from 'react';
-classAppextendsComponent{
+import React, { Component } from 'react';
+class App extends Component{
   constructor() {
     super();
     this.state = {
@@ -7,7 +7,7 @@ classAppextendsComponent{
     }
   }
 
-  makeIncrementer = amount=>()=>
+  makeIncrementer = amount =>()=>
   this.setState(prevState=>({
     count: prevState.count + amount,
   }));
@@ -24,4 +24,4 @@ classAppextendsComponent{
       )
     }
   }
-  exportdefaultApp;
+  export default App;
